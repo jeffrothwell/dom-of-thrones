@@ -39,7 +39,7 @@ function scene2() {
   joffrey.style.width = '52%'
   joffrey.style.position = 'absolute'
   joffrey.style.top = 0
-  joffrey.style.right = 0
+  joffrey.style.left = '45%'
   king = document.querySelector('#king')
   joffreyContainer.append(king);
   king.style.position = 'absolute'
@@ -63,11 +63,6 @@ function scene2() {
   // ned throws sword at joffrey's neck
 
   frame(function() {
-    sword.style.top = '77%'
-    sword.style.left = '31%'
-  })
-
-  frame(function() {
     sword.style.top = '72%'
     sword.style.left = '38%'
   })
@@ -82,10 +77,32 @@ function scene2() {
     sword.style.left = '53%'
   })
 
-  // Stage direction 2
+  // joffrey's head falls off
+  // joffrey.style.left = '45%'
+  // joffrey.style.top = 0
 
   frame(function() {
+    joffrey.style.top = '20%'
+    joffrey.style.left = '81.25%'
+    joffrey.style.transform = 'rotateZ(22.5deg)'
+  })
 
+  frame(function() {
+    joffrey.style.top = '40%'
+    joffrey.style.left = '117.5%'
+    joffrey.style.transform = 'rotateZ(45deg)'
+  })
+
+  frame(function() {
+    joffrey.style.top = '60%'
+    joffrey.style.left = '153.75%'
+    joffrey.style.transform = 'rotateZ(67.5deg)'
+  })
+
+  frame(function() {
+    joffrey.style.top = '80%'
+    joffrey.style.left = '190%'
+    joffrey.style.transform = 'rotateZ(90deg)'
   })
 
 }

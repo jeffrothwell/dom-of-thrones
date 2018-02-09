@@ -31,7 +31,7 @@ function scene2() {
   joffreyContainer.style.width = '10%'
   joffreyContainer.style.height = '35%'
   joffreyContainer.style.top = '55%'
-  joffreyContainer.style.right = '25%'
+  joffreyContainer.style.left = '55%'
   // joffreyContainer.style.border = '2px solid red'
   // joffreyContainer.style.background = 'yellow'
   joffrey = document.querySelector('#joffrey')
@@ -49,15 +49,37 @@ function scene2() {
   // Setup Props
 
   // Prop 1
-
+  sword = document.querySelector('#sword')
+  stage.append(sword)
+  sword.style.position = 'absolute'
+  sword.style.top = '77%'
+  sword.style.left = '31%'
+  sword.style.height = '5%'
+  sword.style.transform = 'rotateY(150deg)'
   // Prop 2
 
   // Action!
 
-  // Stage direction 1
+  // ned throws sword at joffrey's neck
 
   frame(function() {
+    sword.style.top = '77%'
+    sword.style.left = '31%'
+  })
 
+  frame(function() {
+    sword.style.top = '72%'
+    sword.style.left = '38%'
+  })
+
+  frame(function() {
+    sword.style.top = '68%'
+    sword.style.left = '46%'
+  })
+
+  frame(function() {
+    sword.style.top = '63%'
+    sword.style.left = '53%'
   })
 
   // Stage direction 2

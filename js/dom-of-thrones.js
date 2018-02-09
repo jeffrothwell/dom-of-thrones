@@ -6,7 +6,7 @@ function frame(actions) {
     actions()
   }, time)
 
-  time += 500
+  time += 200
 
 }
 
